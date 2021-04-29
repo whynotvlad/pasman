@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_add">#FF000000</color>
+    <color name="button_settings">#FF000000</color>
+    <color name="button_switch">#FF000000</color>
+    <color name="add_layout_background">#FFFFFFFF</color>
+    <color name="input_box">#FF000000</color>
+    <color name="blue">#03396c</color>
+    <color name="lightblue">#005b96</color>
+    <color name="verylightblue">#b3cde0</color>
+    <color name="text_stroke">#8c8c8c</color>
+    <color name="text_stroke_focused">#FF000000</color>
+    <color name="profile_item_background">#ffdab9</color>
+    <color name="gradient_start">#0E0A41</color>
+    <color name="gradient_center">#611313</color>
+    <color name="gradient_end">#000000</color>
+    <color name="plusbutton_startcolor">#040211</color>
+    <color name="plusbutton_endcolor">#0664C2</color>
+    <color name="btn_cancel">#55B90000</color>
+    <color name="btn_cancel_more_transp">#33B90000</color>
+    <color name="item_delete">#B90000</color>
+    <color name="item_edit">#005b96</color>
+    <color name="shadow_text">#88000000</color>
+    <color name="btn_touched">#77faedca</color>
+    <color name="text_pressed">#66afeeee</color>
+    <color name="item_bg">#66AFAFAF</color>
+<!--#011f4b • #03396c • #005b96 • #6497b1 • #b3cde0 -->
+    <color name="add_button_background">#FF000000</color>
+    <color name="add_button_stroke">#FF554400</color>
+    <color name="add_button_text">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

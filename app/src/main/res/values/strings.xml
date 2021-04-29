@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="other_information">Other Information</string>
+    <string name="password">Password</string>
+    <string name="source">Source</string>
+    <string name="login">Login</string>
+    <string name="delete_profile_dialog">Are you sure?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="start">Start</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt_info_title">Password Manager</string>
+    <string name="prompt_info_subtitle">Please PALEZ PRILOZHY</string>
+    <string name="prompt_info_description">a hule ty dumal, tut vse seryozno</string>
+    <string name="prompt_info_use_app_password">Use app password</string>
+    <string name="welcome">Welcome to Password Manager</string>
+    <string name="singin">Sing in</string>
+    <string name="or">Or</string>
+    <string name="go">Go</string>
+    <string name="authorize">Authorize</string>
+    <string name="use_biom">Use biometrics</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="crete_password">First of all, create a password,\n which you will use to log in </string>
+    <string name="enable_login">Enable Biometric\nLogic</string>
+    <string name="enter_password_to_confirm">Enter your password to confirm activation</string>
+
+</resources>

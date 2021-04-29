@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_identity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluegradient_background">
+    tools:context=".IdentityActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_identities"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/iv_identity" />
+
+    <ImageView
+        android:id="@+id/iv_identit12321313y"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/main_image"
+        android:src="@drawable/identity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_identity"
+        android:layout_width="52dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_image"
+        android:src="@drawable/identity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btn_settingsInNotes_identity"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/black"
+        android:padding="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_angle_identity"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round"
+                android:backgroundTint="@color/black" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_angle_image_identity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/angle" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout_menu_identity"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/oval"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/right_button"
+        app:layout_constraintLeft_toLeftOf="@+id/right_button"
+        app:layout_constraintRight_toRightOf="@+id/right_button">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="startCards"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/card" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="startProfiles"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/account" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="startIdentity"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/identity" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="startNotes"
+            android:paddingStart="15dp"
+            android:paddingEnd="12dp"
+            android:src="@drawable/notes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_menu_identity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_layout_background"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Name"
+            app:boxCornerRadiusBottomEnd="50dp"
+            app:boxCornerRadiusBottomStart="50dp"
+            app:boxCornerRadiusTopEnd="50dp"
+            app:boxCornerRadiusTopStart="50dp"
+            app:boxStrokeColor="@color/input_box"
+            app:boxStrokeWidth="5dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_name_identity1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Surname"
+            app:boxCornerRadiusBottomEnd="50dp"
+            app:boxCornerRadiusBottomStart="50dp"
+            app:boxCornerRadiusTopEnd="50dp"
+            app:boxCornerRadiusTopStart="50dp"
+            app:boxStrokeColor="@color/input_box"
+            app:boxStrokeWidth="5dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_surname_identity1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:hint="Street"
+                app:boxCornerRadiusBottomEnd="50dp"
+                app:boxCornerRadiusBottomStart="50dp"
+                app:boxCornerRadiusTopEnd="50dp"
+                app:boxCornerRadiusTopStart="50dp"
+                app:boxStrokeColor="@color/input_box"
+                app:boxStrokeWidth="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_street_identity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:hint="Appartement"
+                app:boxCornerRadiusBottomEnd="50dp"
+                app:boxCornerRadiusBottomStart="50dp"
+                app:boxCornerRadiusTopEnd="50dp"
+                app:boxCornerRadiusTopStart="50dp"
+                app:boxStrokeColor="@color/input_box"
+                app:boxStrokeWidth="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_apartement_identity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:hint="Country"
+                app:boxCornerRadiusBottomEnd="50dp"
+                app:boxCornerRadiusBottomStart="50dp"
+                app:boxCornerRadiusTopEnd="50dp"
+                app:boxCornerRadiusTopStart="50dp"
+                app:boxStrokeColor="@color/input_box"
+                app:boxStrokeWidth="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_country_identity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:hint="Postcode"
+                app:boxCornerRadiusBottomEnd="50dp"
+                app:boxCornerRadiusBottomStart="50dp"
+                app:boxCornerRadiusTopEnd="50dp"
+                app:boxCornerRadiusTopStart="50dp"
+                app:boxStrokeColor="@color/input_box"
+                app:boxStrokeWidth="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_postcode_identity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Phone"
+                app:boxCornerRadiusBottomEnd="50dp"
+                app:boxCornerRadiusBottomStart="50dp"
+                app:boxCornerRadiusTopEnd="50dp"
+                app:boxCornerRadiusTopStart="50dp"
+                app:boxStrokeColor="@color/input_box"
+                app:boxStrokeWidth="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_phone_identity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                app:boxCornerRadiusBottomEnd="50dp"
+                app:boxCornerRadiusBottomStart="50dp"
+                app:boxCornerRadiusTopEnd="50dp"
+                app:boxCornerRadiusTopStart="50dp"
+                app:boxStrokeColor="@color/input_box"
+                app:boxStrokeWidth="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_email_identity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_add_identity1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/add_button"
+            android:gravity="center"
+            android:onClick="addIdentity"
+            android:text="Add"
+            android:textColor="@color/add_button_text" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plusbutton"
+                android:backgroundTint="@color/black" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_plus_image_identity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/plus_icon" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
